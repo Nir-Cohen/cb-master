@@ -1,7 +1,7 @@
 import "./login.less";
-import background from "../images/backleader.png";
+import background from "../images/transBack.png";
 import logo from "../images/logo.png";
-import InputBase from "@material-ui/core/InputBase";
+import crown from "../images/crown.png";
 
 const Login = () => (
   <div
@@ -13,93 +13,91 @@ const Login = () => (
       backgroundSize: "cover",
     }}
   >
-    <div>Best 2800</div>
     <div
       style={{
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
-        alignItems: "flex-end",
-        marginRight: "1.5rem",
+        alignItems: "center",
       }}
     >
-      <div style={{ marginRight: "10rem", marginTop: "5rem" }}>LeaderBoard</div>
+      <div>
+        <img style={{ width: "10rem", marginTop: "-1rem" }} src={logo} />
+        <div style={{ position: "absolute", marginLeft: "22rem", display: "flex", marginTop: '-9rem', alignItems: "center" }}>
+          <img src={crown} />
+          <div style={{color: "#FF42A1", fontWeight: "700"}}>2800</div>
+        </div>
+      </div>
       <div
         style={{
           marginTop: "2rem",
           border: "1px solid #FF42A1",
-          width: "16rem",
+          width: "18rem",
           height: "2.5rem",
           borderRadius: "2rem",
           color: "black",
-          backgroundColor: "#F886B6",
+          backgroundColor: "#FF42A1",
         }}
       >
-        <div style={{position: "absolute", marginLeft: "-1.5rem", marginTop: "0.6rem"}}>1</div>
         <div
           onClick={() => (window.location.href = "/home")}
           style={{
             textAlign: "center",
             marginTop: "0.7rem",
+            color: "white",
             cursor: "pointer",
+            fontWeight: "800"
           }}
         >
-         <div style={{ justifyContent: "space-around", display: "flex" }}>
-            <span>Sara</span>
-            <span>2000 points</span>
-          </div>
+          Invite a friend
         </div>
       </div>
       <div
         style={{
-          marginTop: "1rem",
+          marginTop: "2rem",
           border: "1px solid #FF42A1",
-          width: "16rem",
+          width: "18rem",
           height: "2.5rem",
           borderRadius: "2rem",
           color: "black",
-          backgroundColor: "#F886B6",
+          backgroundColor: "#FF42A1",
         }}
       >
-        <div style={{position: "absolute", marginLeft: "-1.5rem", marginTop: "0.6rem"}}>2</div>
         <div
-          onClick={() => (window.location.href = "/home")}
+          onClick={() => (window.location.href = "/game")}
           style={{
             textAlign: "center",
             marginTop: "0.7rem",
+            color: "white",
             cursor: "pointer",
+            fontWeight: "800"
           }}
         >
-         <div style={{ justifyContent: "space-around", display: "flex" }}>
-            <span>You</span>
-            <span>1500 points</span>
-          </div>
+          Start Game
         </div>
       </div>
       <div
         style={{
-          marginTop: "1rem",
+          marginTop: "2rem",
           border: "1px solid #FF42A1",
-          width: "16rem",
+          width: "18rem",
           height: "2.5rem",
           borderRadius: "2rem",
           color: "black",
-          backgroundColor: "#F886B6",
+          backgroundColor: "#FF42A1",
         }}
       >
-        <div style={{position: "absolute", marginLeft: "-1.5rem", marginTop: "0.6rem"}}>3</div>
         <div
-          onClick={() => (window.location.href = "/home")}
+          onClick={() => (window.location.href = "/leaderboard")}
           style={{
             textAlign: "center",
             marginTop: "0.7rem",
+            color: "white",
             cursor: "pointer",
+            fontWeight: "800"
           }}
         >
-          <div style={{ justifyContent: "space-around", display: "flex" }}>
-            <span>Dan</span>
-            <span>1200 points</span>
-          </div>
+          Leaderboard
         </div>
       </div>
     </div>
